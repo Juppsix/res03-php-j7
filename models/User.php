@@ -1,6 +1,6 @@
 <?php class User {
 
-private int $id;
+private ?int $id;
  private string $first_name;
  private string $last_name;
  private string $email;
@@ -9,8 +9,8 @@ private int $id;
    public function __construct(string $first_name, string $last_name, string $email, string $password)
     {
         $this->id = null;
-        $this->firstName = $first_name;
-        $this->lastName = $last_name;
+        $this->first_name = $first_name;
+        $this->last_name = $last_name;
         $this->email = $email;
         $this->password = $password;
     }

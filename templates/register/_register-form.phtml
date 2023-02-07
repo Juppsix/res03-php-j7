@@ -1,15 +1,16 @@
-<form action="" method="post">
+<!-- ça manque d'action ce truc --><!-- ça manque toujours cruellement d'action -->
+<form action="index.php?route=creer-un-compte" method="post">
 <fieldset>
-    <label for="name">Prénom:</label>
+    <label for="firstName">Prénom:</label>
 
-<input type="text" id="name" name="name" required
+<input type="text" id="firstName" name="firstName" required
        minlength="4"  size="10">
 
 </fieldset>
 <fieldset>
-     <label for="name">Nom:</label>
+     <label for="lastName">Nom:</label>
 
-<input type="text" id="name" name="name" required
+<input type="text" id="lastName" name="lastName" required
        minlength="4" size="10">
 </fieldset>
 <fieldset>
@@ -26,5 +27,8 @@
 </fieldset>
 
 <fieldset>
-    <input type="hidden" id="postId" name="formName" value="34657">
+    <input type="hidden" id="postId" name="formName" value="register">
 </fieldset>
+
+<input type="submit" value="Envoyez">
+<!-- ajouter un submit -->

@@ -1,5 +1,8 @@
 <?php function checkRoute(string $route) : void 
 {
+    echo "\$_POST dans le router.php<br>";
+    var_dump($_POST);
+    
     if ($route==="connexion")
     {
         require 'pages/login.php';
